@@ -1,0 +1,229 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #191618;
+}
+
+.container {
+    width: 16.8em;
+    height: 25em;
+    background: linear-gradient(#5e4ae3, #947bd3, #d282a6, #e8b4bc, #f9dbbd);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    border-radius: 16.8em;
+    animation: colors 12s infinite forwards;
+    overflow: hidden;
+
+}
+
+@keyframes colors {
+    10% {
+        background: linear-gradient(#5e4ae3, #947bd3, #d282a6, #e8b4bc, #f9dbbd);
+    }
+
+    53% {
+        background: linear-gradient(#00296b, #05299e, #5e4ae3, #947bd3);
+    }
+
+    55% {
+        background: linear-gradient(#00296b, #05299e, #5e4ae3, #947bd3);
+
+    }
+
+    98% {
+        background: linear-gradient(#5e4ae3, #947bd3, #d282a6, #e8b4bc, #f9dbbd);
+
+    }
+
+    100% {
+        background: linear-gradient(#5e4ae3, #947bd3, #d282a6, #e8b4bc, #f9dbbd);
+
+    }
+}
+
+.spinner {
+    height: 28.12em;
+    width: 28.12em;
+    border-radius: 50%;
+    position: absolute;
+    top: 8.75em;
+    left: -5.62em;
+    animation: spin 12s infinite forwards;
+}
+
+@keyframes spin {
+    10% {
+        transform: rotate(0deg);
+    }
+
+    45% {
+        transform: rotate(180deg);
+    }
+
+    55% {
+        transform: rotate(180deg);
+    }
+
+    90% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.sun {
+    background-color: #fff9ec;
+    height: 3.75em;
+    width: 3.75em;
+    border-radius: 50%;
+    position: absolute;
+    left: 12.18em;
+    top: -1.87em;
+}
+
+.sun::before,
+.sun::after {
+    position: absolute;
+    content: "";
+    background-color: rgb(249, 249, 248, 0.1);
+    border-radius: 50%;
+}
+
+.sun::before {
+    height: 7.5em;
+    width: 7.5em;
+    right: -1.87em;
+    bottom: -1.87em;
+}
+
+.sun::after {
+    height: 12.5em;
+    width: 12.5em;
+    right: -4.37em;
+    bottom: -4.37em;
+}
+
+.moon {
+    height: 3.75em;
+    width: 3.75em;
+    box-shadow: 1.25em -1.25em 0 0 #fff9ec;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -3.1em;
+    left: 10.93em;
+}
+
+.moon::before,
+.moon::after {
+    position: absolute;
+    content: "";
+    background-color: rgb(249, 249, 248, 0.1);
+    border-radius: 50%;
+}
+
+.moon::before {
+    height: 6.25em;
+    width: 6.25em;
+    right: -2.5em;
+    bottom: 0;
+}
+
+
+.moon::after {
+    height: 11.8em;
+    width: 11.8em;
+    left: -2.8em;
+    bottom: -2.8em;
+}
+
+.stars {
+    height: 0.15em;
+    width: 0.15em;
+    background-color: white;
+    position: absolute;
+    top: 3.7em;
+    left: 9.3em;
+    border-radius: 50%;
+    box-shadow: 3em 9.3em white, -1.8em 11.2em white, 2.5em 16.2em white,
+        -5em 6.2em white, -5.6em -0.6em white, -5.6em 3em white, 7em 0 0.06em white, -5em 17.5em 0 0.05em white, -7.5em 14.3em white;
+    animation: twinkle 12s infinite forwards;
+}
+
+@keyframes twinkle {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0;
+    }
+
+    53% {
+        opacity: 0.7;
+    }
+
+    55% {
+        opacity: 0.7;
+    }
+
+    98% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.cloud-right {
+    height: 15.8em;
+    width: 15.8em;
+    background-color: rgba(255, 255, 255, 0.187);
+    position: absolute;
+    top: 14em;
+    left: 8.3em;
+    border-radius: 50%;
+    animation: clouds 12s infinite forwards
+}
+
+.cloud-left {
+    height: 15.8em;
+    width: 15.8em;
+    background-color: rgba(255, 255, 255, 0.34);
+    position: absolute;
+    top: 18em;
+    right: 8.16em;
+    border-radius: 50%;
+    animation: clouds 12s infinite forwards;
+}
+
+@keyframes clouds {
+    0% {
+        opacity: 0.7;
+    }
+
+    10% {
+        opacity: 0.7;
+    }
+
+    53% {
+        opacity: 0;
+    }
+
+    55% {
+        opacity: 0;
+    }
+
+    98% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0.7;
+    }
+}
